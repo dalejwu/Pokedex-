@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Pokedex</h1>
+            <button id="theme-toggle" class="theme-toggle">
+                <span class="light-icon">☀️</span>
+                <span class="dark-icon">🌙</span>
+            </button>
+        </div>
+        <div class="tabs">
+            <button class="tab-button active" data-tab="pokedex">Pokedex</button>
+            <button class="tab-button" data-tab="info">Info</button>
+            <button class="tab-button" data-tab="origins">Origins</button>
+        </div>
+        
+        <div class="tab-content active" id="pokedex">
+            <div class="search-container">
+                <input type="text" id="search" placeholder="Search Pokemon...">
+                <div class="filters">
+                    <select id="typeFilter">
+                        <option value="all">All Types</option>
+                    </select>
+                    <select id="rarityFilter">
+                        <option value="all">All Rarities</option>
+                        <option value="common">Common</option>
+                        <option value="uncommon">Uncommon</option>
+                        <option value="rare">Rare</option>
+                        <option value="legendary">Legendary</option>
+                        <option value="mythical">Mythical</option>
+                    </select>
+                </div>
+            </div>
+            <div id="pokemon-container" class="pokemon-container">
+                <!-- Pokemon cards will be added here -->
+            </div>
+        </div>
+
+        <div class="tab-content" id="info">
+            <div class="info-content">
+                <h2>About Pokemon</h2>
+                <p>Pokemon are creatures of all shapes and sizes who live in the wild or alongside humans. During their adventures, Pokemon grow and become stronger, sometimes even evolving into different Pokemon.</p>
+                <h3>Pokemon Types</h3>
+                <div class="type-list">
+                    <!-- Types will be added by JavaScript -->
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-content" id="origins">
+            <div class="origins-content">
+                <h2>Pokemon Origins</h2>
+                <p>Pokemon was created by Satoshi Tajiri in 1996. The franchise began as a pair of video games for the original Game Boy, developed by Game Freak and published by Nintendo.</p>
+                <p>The idea for Pokemon came from Tajiri's childhood hobby of insect collecting, a popular pastime in Japan. He wanted to create a game that could share the excitement of catching and collecting creatures with a new generation.</p>
+                <h3>Regions</h3>
+                <ul class="regions-list">
+                    <li>Kanto - The original region, based on the Kantō region of Japan</li>
+                    <li>Johto - Based on the Kansai region of Japan</li>
+                    <li>Hoenn - Based on the Kyushu region of Japan</li>
+                    <li>Sinnoh - Based on the Hokkaido region of Japan</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
